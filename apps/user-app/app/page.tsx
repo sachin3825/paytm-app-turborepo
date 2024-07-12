@@ -1,3 +1,7 @@
-export default function Home() {
-  return <div className="bg-red-400">Hello</div>;
+"use client";
+import { useBalance } from "@repo/store/useBalance";
+
+export default function () {
+  const balance = useBalance();
+  return <div>hi there {balance}</div>;
 }
